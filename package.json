@@ -4,6 +4,8 @@
   "description": "Wrapper of FileReader",
   "main": "dist/index.js",
   "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Torichan <github@toriyama.dev>",
